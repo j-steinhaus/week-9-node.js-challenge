@@ -171,7 +171,6 @@ const questions = [
   },
 ]; //end of questions array
 
-// TODO: Create a function to write README file
 // this is an await in the async function
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (error) => {
@@ -182,7 +181,7 @@ function writeToFile(fileName, data) {
 }
 
 const createReadMe = util.promisify(writeToFile);
-// TODO: Create a function to initialize app
+
 // create async function with catch for errors
 async function init() {
   try {
